@@ -6,7 +6,10 @@ const divide = (a, b) => (b === 0) ? 'Divided by zero' : a / b;
 
 const multiply = (a, b) =>  a * b;
 
-let arg1 = '';
-let arg2 = '';
+let input1 = '';
+let input2 = '';
 let operator = '';
 
+function operate(arg1, arg2, operator) {
+    return operator(arg1, arg2)
+}
