@@ -13,3 +13,5 @@ let operator = '';
 function operate(arg1, arg2, operator) {
     return operator(arg1, arg2)
 }
+
+document.querySelector(".display").value = '808'
