@@ -38,16 +38,16 @@ button {
     border-radius: 100%;
     border: 0;
 }
-.operator {
+.operator, .clear {
     background-color: #FC9500;
     font-size: 2rem;
 }
 .operator:hover {
     background-color: #ffad33;
 }
-.number {
+.number, .equal {
     background-color: #515456;
 }
-.number:hover {
+.number:hover, .equal:hover {
     background-color: #6B7175;
 }

@@ -8,10 +8,23 @@ const multiply = (a, b) =>  a * b;
 
 let input1 = '';
 let input2 = '';
+let currentInput = '';
 let operator = '';
 
 function operate(arg1, arg2, operator) {
     return operator(arg1, arg2)
 }
 
-document.querySelector(".display").value = '808'
+let display = document.querySelector(".display")
+let buttons = document.querySelector('.buttons');
+
+buttons.addEventListener('click', populateDisplay)
+
+function populateDisplay(e) {
+    let target = e.target;
+    
+    if (target.classList.contains('number')) {
+        currentInput += target.textContent;
+        display.value = currentInput;
+    }
+}
