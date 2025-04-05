@@ -15,8 +15,8 @@
     padding: 0 1rem;
     background-color: #8b889a;
     border: 0;
-    font-family: "PT Mono", monospace;
-    font-size: 4rem;
+    font-family: monospace;
+    font-size: 2.5rem;
     text-align: right;
 }
 .buttons {
@@ -42,7 +42,7 @@ button {
     background-color: #FC9500;
     font-size: 2rem;
 }
-.operator:hover {
+.operator:hover, .clear:hover {
     background-color: #ffad33;
 }
 .number, .equal {
